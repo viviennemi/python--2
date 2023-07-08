@@ -15,10 +15,10 @@ while True:
         print(f'猜對了答案是{target}\n你共猜了{count}次')
         break
     elif keyin <target:
-        print('再大一點')
+        print(f'再大一點\n你已經猜了{count}次')
         min = keyin +1
     elif keyin >target:
-        print('再小一點')
+        print(f'再小一點\n你已經猜了{count}次')
         max = keyin-1
-    print(f'猜錯了\n你已經猜了{count}次')
+    #print(f'猜錯了\n你已經猜了{count}次')
 print('Game Over')
