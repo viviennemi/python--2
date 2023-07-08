@@ -9,7 +9,7 @@ target = random.randrange(min,max)
 #print(target)
 
 while True:
-    keyin = int(input(f'猜數字範圍{min}~{max}'))
+    keyin = int(input(f'猜數字範圍{min}~{max}:  '))
     count += 1
     if(keyin == target):
         print(f'猜對了,答案是{target}')
