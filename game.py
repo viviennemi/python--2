@@ -5,7 +5,7 @@ import random
 min=1
 max=10
 target = random.randrange(min,max)
-print(target)
+#print(target)
 
 while true:
     keyin = int(input(f'猜數字範圍{min}~{max}'))
