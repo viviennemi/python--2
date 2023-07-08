@@ -4,7 +4,7 @@ import random
 
 min=1
 max=10
-count = 0
+count = 0  #記得要加上變數不然無法在執行迴圈時，程式找不到變數無法執行
 target = random.randrange(min,max)
 #print(target)
 
