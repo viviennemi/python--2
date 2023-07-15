@@ -10,7 +10,7 @@ def playGame():
     target = random.randrange(min,max)
     print('**猜數字**')
 
-    1while True:
+    while True:
         keyin = int(input(f'猜數字範圍{min}~{max}:  '))
         count += 1
         if(keyin == target):
