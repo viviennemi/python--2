@@ -16,7 +16,6 @@ for item in location:
     city_item['最低溫度'] = float(item['weatherElement'][2]['time'][0]['parameter']['parameterName'])
     city_item['感覺'] = item['weatherElement'][3]['time'][0]['parameter']['parameterName']
     weather_list.append(city_item)
-weather_list
 with open('目前天氣.csv',mode='w',encoding='utf-8',newline='') as file:
     fieldnames = ['城市', '啟始時間','結束時間','最高溫度','最低溫度','感覺']
     writer = csv.DictWriter(file,fieldnames=fieldnames)
