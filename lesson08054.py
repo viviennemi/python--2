@@ -12,3 +12,4 @@ axes1 = figure1.add_subplot()
 axes1.plot(y1)
 axes1.plot(y2)
 st.write(figure1)
+#執行要用streamlit run 程式名稱
