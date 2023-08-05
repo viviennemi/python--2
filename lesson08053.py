@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 #沒有value的時候無法互動但是會顯示
-value = st.slider("三角函式",min_value=0,max_valuse=10)
+value = st.slider("三角函式",min_value=0,max_value=10)
 t = np.arange(0.,value,0.05)
 y1 = np.sin(2 * np.pi * t)
 y2 = np.cos(2 * np.pi * t)
