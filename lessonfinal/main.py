@@ -1,5 +1,6 @@
 import csv
 import pandas as pd
+import streamlit as st
 
 def getStockNames() -> pd.Series:
     with open('codeSearch.csv',encoding='utf-8',newline='') as file:
@@ -13,5 +14,10 @@ def getStockNames() -> pd.Series:
     code_series:pd.Series = pd.Series(stock_codes)
     return code_series
 
+#多重選取
 stockNames:pd.Series = getStockNames()
 print(stockNames)
+options = st.sidebar.multiselect('請選擇',
+                       stockNames.values,
+                       placeholder='股票:')
+print(options)
