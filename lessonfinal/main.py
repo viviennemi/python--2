@@ -17,7 +17,8 @@ def getStockNames() -> pd.Series:
 #多重選取
 stockNames:pd.Series = getStockNames()
 print(stockNames)
+stock_name_id = stockNames.index + "_" + stockNames.values
 options = st.sidebar.multiselect('請選擇',
-                       stockNames.values,
+                       stock_name_id,
                        placeholder='股票:')
 print(options)
